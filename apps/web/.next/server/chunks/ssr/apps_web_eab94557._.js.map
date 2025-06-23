@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///home/nasa/projects/hub/apps/web/app/page.tsx"],"sourcesContent":["import { Button } from \"@workspace/ui/components/button\"\nimport { Accordion } from \"@workspace/ui/components/accordion\"\n\nexport default function Page() {\n  return (\n    <>\n      <header className=\"h-[33vh] w-screen flex justify-center place-items-center\">\n        <h1 className=\"text-6xl text-shadow-lg\">Life Logs</h1>\n      </header>\n      <main className=\"w-screen\">\n        <section className=\"h-fit w-full flex justify-center\">\n          <div className=\"w-[90%] shadow-lg border-2 border-gray-200 rounded-lg p-6\">\n            <h1 className=\"text-2xl font-mono\">1.0.0</h1>\n            <div> \n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat earum ullam mollitia minima sunt provident. \n              Laborum sit magnam corrupti? Et quam quis non esse quo aut qui cumque ad.\n            </div>\n          </div>\n        </section>\n      </main>\n    </>\n  )\n}\n"],"names":[],"mappings":";;;;;AAGe,SAAS;IACtB,qBACE;;0BACE,6WAAC;gBAAO,WAAU;0BAChB,cAAA,6WAAC;oBAAG,WAAU;8BAA0B;;;;;;;;;;;0BAE1C,6WAAC;gBAAK,WAAU;0BACd,cAAA,6WAAC;oBAAQ,WAAU;8BACjB,cAAA,6WAAC;wBAAI,WAAU;;0CACb,6WAAC;gCAAG,WAAU;0CAAqB;;;;;;0CACnC,6WAAC;0CAAI;;;;;;;;;;;;;;;;;;;;;;;;AASjB","debugId":null}}]
+}

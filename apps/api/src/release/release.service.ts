@@ -1,14 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { CreateLogDto } from './dto/create-log.dto';
-import { UpdateLogDto } from './dto/update-log.dto';
+import { CreateReleaseDto } from './dto/create-release.dto';
+import { UpdateReleaseDto } from './dto/update-release.dto';
 import { marked } from 'marked';
 
 @Injectable()
-export class LogService {
-  create(createLogDto: CreateLogDto) {
-    return 'This action adds a new log';
+export class ReleaseService {
+  create(createReleaseDto: CreateReleaseDto) {
+    return 'This action adds a new release';
   }
-
+  
   findAll() {
     const mock = [
       {
@@ -36,13 +36,14 @@ export class LogService {
         status:"uncompleted",
         version:"1.0.1",
         name:"Primeiros passos",
-        content: `Depois de um bom começo com uma base sólida e moderna, é hora de sairmos do rascunho
-        e rumarmos algo mais completo.
+        content: `
+# My To-Do List
 
-        O que vai entrar nessa versão:
-        - [ ] Adição de novas versões
-        - [ ] Dark mode
-        `,
+- [ ] Write documentation  
+- [x] Set up CI/CD  
+- [ ] Deploy to production
+`,
+
         bedges:[
           {
             title: "hot!",
@@ -59,14 +60,14 @@ export class LogService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} log`;
+    return `This action returns a #${id} release`;
   }
 
-  update(id: number, updateLogDto: UpdateLogDto) {
-    return `This action updates a #${id} log`;
+  update(id: number, updateReleaseDto: UpdateReleaseDto) {
+    return `This action updates a #${id} release`;
   }
 
   remove(id: number) {
-    return `This action removes a #${id} log`;
+    return `This action removes a #${id} release`;
   }
 }

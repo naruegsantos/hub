@@ -1,13 +1,12 @@
-
-export interface ILog {
+export interface ITodo {
     id:string
-    date:string
     status:string
-    version?:string
-    name?:string
+    title?:string
+    created_at:string
+    completed_at:string
     content:string,
     bedges?:{
         title:string,
         variant: "default" | "secondary" | "destructive" | "outline" | null | undefined
     }[]
-}
+}   

@@ -14,7 +14,9 @@
     "components": "@/components",
     "hooks": "@/hooks",
     "lib": "@/lib",
+    "env": "@workspace/env",
     "utils": "@workspace/ui/lib/utils",
     "ui": "@workspace/ui/components"
   }
 }
+  

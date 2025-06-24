@@ -11,12 +11,19 @@
   "devDependencies": {
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
+    "@workspace/env": "workspace:*",
     "prettier": "^3.5.1",
     "turbo": "^2.4.2",
     "typescript": "5.7.3"
   },
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.12.2",
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "showdown": "^2.1.0",
+    "zod": "^3.24.2",
+    "@workspace/env": "workspace:*"
   }
 }

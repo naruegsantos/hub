@@ -11,7 +11,6 @@ import {
 	CarouselPrevious,
 } from "@workspace/ui/components/carousel"
 
-import { ITodo } from "@/types/todo";
 import TodoList from "./todoList";
 
 const ErrorPage = () => (
@@ -24,28 +23,19 @@ const ErrorPage = () => (
 export default async function Pages() {
 
 	const getPageData = async (route:string) => {
-		if (process.env.NODE_ENV !== "production") {
-			console.warn("⚠️ pulando fetch em build");
-			return({error:"local build"})
-		} else {
-			try {
-				const res = await (await fetch(env.API_URL + route)).json()
-				
-				return res
-			} catch (err) {
-				console.error("Erro ao buscar dados:", err);
-			}
+		try {
+			const res = await (await fetch(env.API_URL + route)).json()
+			return res
+		} catch (err) {
+			console.error("Erro ao buscar dados:", err);
 		}
-
 	}
 
 	const pages = {
-		releases: await getPageData("/release") || [],
-		toDos: await getPageData("/to-dos") || []
+		releases: await getPageData("release") || [],
+		toDos: await getPageData("to-dos") || []
 	}
 
-	console.log(pages.releases);
-	
 
 	return (
 		<>

@@ -12,10 +12,10 @@ export class ReleaseController {
     return this.releaseService.create(createreleaseDto);
   }
   
-  // @Get()
-  // findAll() {
-  //   return this.releaseService.findAll();
-  // }
+  @Get()
+  findAll() {
+    return this.releaseService.findAll();
+  }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
